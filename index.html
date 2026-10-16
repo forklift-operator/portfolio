@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stoyan Yordanov — Portfolio. Java, C++, TypeScript, C# and web projects." />
+  <title>Stoyan Yordanov</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-container">
+
+    <!-- ===== HEADER ===== -->
+    <header class="heading">
+      <a class="heading-name" href="#top">Stoyan Yordanov</a>
+      <nav class="heading-nav">
+        <a href="#projects" class="heading-nav-element">Projects</a>
+        <a href="#technologies" class="heading-nav-element">Technologies</a>
+        <a href="#about" class="heading-nav-element">About</a>
+        <a href="#contact" class="heading-nav-element">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about-section" id="about">
+      <p class="heading-location">
+        <span class="dot"></span> Sofia, Bulgaria
+      </p>
+
+      <p class="about-headline">
+        Computer Science student at
+        <a class="about-school" href="https://www.fmi.uni-sofia.bg/en" target="_blank" rel="noopener">
+          Sofia University "St. Kliment Ohridski"</a
+        >.
+      </p>
+
+      <p class="about-paragraph">
+        I build across the stack — from Java client-server systems and C++ algorithms
+        to full-stack TypeScript applications. My work covers networking, image
+        processing, data structures, concurrency and web platforms, with an emphasis
+        on clean, well-structured code.
+      </p>
+
+      <div class="about-links">
+        <a
+          class="about-link"
+          href="https://github.com/forklift-operator"
+          target="_blank"
+          rel="noopener"
+          >GitHub <span class="arr">&#8599;</span></a
+        >
+        <a class="about-link email-link" data-email="stoyanyordanov" title="Click to copy email">
+          Email <span class="arr">&#9993;</span>
+        </a>
+        <span class="copy-msg">Email copied!</span>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+      <p class="section-title">
+        <span class="section-icon">&#9670;</span> Projects
+      </p>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Java">Java</button>
+        <button class="filter-btn" data-filter="TypeScript">TypeScript</button>
+        <button class="filter-btn" data-filter="C++">C++</button>
+        <button class="filter-btn" data-filter="C#">C#</button>
+        <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+      </div>
+
+      <div class="projects-section" id="projectsGrid">
+        <!-- Project cards are injected here by script.js -->
+      </div>
+
+      <div class="more-projects-wrap">
+        <a
+          href="https://github.com/forklift-operator?tab=repositories"
+          target="_blank"
+          rel="noopener"
+        >
+          <button class="more-projects-btn">View More on GitHub &#8599;</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== TECHNOLOGIES ===== -->
+    <section id="technologies">
+      <p class="section-title">
+        <span class="section-icon">&#9670;</span> Tech Stack
+      </p>
+
+      <div class="tech-stack">
+        <p>Languages</p>
+        <p>Java, C++, C#, TypeScript, JavaScript, SQL, HTML, CSS</p>
+      </div>
+      <div class="tech-stack">
+        <p>Backend</p>
+        <p>Spring Boot, Spring Security, JPA/Hibernate, Node.js, Express, REST</p>
+      </div>
+      <div class="tech-stack">
+        <p>Frontend</p>
+        <p>React, Angular, Vite, Vanilla JS, Socket.IO</p>
+      </div>
+      <div class="tech-stack">
+        <p>Data</p>
+        <p>MySQL, MongoDB, Mongoose, json-server</p>
+      </div>
+      <div class="tech-stack">
+        <p>Other</p>
+        <p>Java NIO, Concurrency, WebRTC/PeerJS, JUnit 5, Git, Maven</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <p class="section-title">
+        <span class="section-icon">&#9670;</span> Contact
+      </p>
+      <div class="contact-links">
+        <a
+          class="contact-link"
+          href="https://github.com/forklift-operator"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="contact-ico">GH</span> github.com/forklift-operator
+        </a>
+        <a class="contact-link email-contact" data-email="stoyanyordanov">
+          <span class="contact-ico">@</span> stoyanyordanov <span class="at">[at]</span> mail.com
+          <span class="contact-email-copy">Copied!</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <p class="footer-text">Stoyan Yordanov &mdash; built by hand, no framework.</p>
+      <div class="footer-links">
+        <a
+          href="https://github.com/forklift-operator?tab=repositories"
+          target="_blank"
+          rel="noopener"
+          class="footer-link"
+          >All repositories</a
+        >
+        <a href="#top" class="footer-link">Back to top</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
