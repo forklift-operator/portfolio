@@ -1,6 +1,6 @@
 # Portfolio
 
-A single-page developer portfolio for **stoyanyordanov**, listing every public
+A single-page developer portfolio for **Stoyan Yordanov**, listing every public
 repository from `github.com/forklift-operator`.
 
 ## Files
@@ -43,10 +43,10 @@ python -m http.server 5173
 The filter bar and per-language counts are generated automatically, and
 languages with no projects are dropped from the bar.
 
-**Contact details** — the email is currently a placeholder
-(`stoyanyordanov@mail.com`) set in `index.html` via the `data-email` attributes
-on the two email links. Change the handle there, or the `+ '@mail.com'` lines in
-`script.js` if the domain differs.
+**Contact details** — the email is set in `index.html` via the `data-email`
+attributes on the two email links (`.about-link.email-link` and
+`.contact-link.email-contact`); `script.js` copies that attribute value as-is.
+Update both attributes together with the visible text in the contact section.
 
 **Project thumbnails** — cards currently use generated gradient banners with a
 language label and initials, so the page needs no image assets. To use real

@@ -153,8 +153,7 @@
 
   if (emailLink) {
     emailLink.addEventListener("click", async () => {
-      const handle = emailLink.dataset.email;
-      const value = `${handle}@mail.com`;
+      const value = emailLink.dataset.email;
       if (await copyText(value)) flash(copyMsg);
     });
   }
@@ -162,8 +161,7 @@
   const contactEmail = document.querySelector(".contact-link.email-contact");
   if (contactEmail) {
     contactEmail.addEventListener("click", async () => {
-      const handle = contactEmail.dataset.email;
-      const value = `${handle}@mail.com`;
+      const value = contactEmail.dataset.email;
       const badge = contactEmail.querySelector(".contact-email-copy");
       if (await copyText(value)) flash(badge);
     });
